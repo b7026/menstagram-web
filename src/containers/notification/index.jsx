@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-<<<<<<< HEAD
 import { Link } from 'react-router-dom';
 
 export class Notification extends Component {
