@@ -19,6 +19,7 @@ import { Profile } from './containers/profile';
 import { ProfileEdit } from './containers/profile/edit';
 import { Menu } from './components/menu';
 import { Like } from './containers/likes';
+import NotFound from './404'
 
 export const Routes = () => {
   return (
@@ -40,6 +41,7 @@ export const Routes = () => {
               <Route exact path={'/followed/:id'} component={Follow} />
               <Route exact path={'/following/:id'} component={Follow} />
               <Route exact path={'/profile/:id/edit'} component={ProfileEdit} />
+              <Route component={NotFound} />
               <Route
                 exact
                 path={'/notification/liked'}
